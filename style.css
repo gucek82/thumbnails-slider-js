@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 6px #fff;
+}
+.content h1 {
+  font-size: 35px;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.stop {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+}
+
+button.stop:hover {
+  color: red;
+  background-color: transparent;
+}
+
+button:active {
+  border: none;
+}
+
+.thumbs {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+.thumbs span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.thumbs img {
+  width: 70px;
+  height: 70px;
+}
+
+.thumbs span.active {
+  transform: scale(1.3);
+}
